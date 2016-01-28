@@ -13,6 +13,7 @@ deploy:
   bucket: learn.visualregressiontesting.com
   local-dir: build
   acl: public_read
+  skip_cleanup: true
   on:
     repo: visualregressiontesting/learn.visualregressiontesting.com
     branch: master
