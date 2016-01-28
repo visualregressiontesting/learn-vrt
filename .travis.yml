@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+- 4.2.1
+script:
+- npm run build
+deploy:
+  provider: s3
+  region: us-west-2
+  access_key_id: AKIAIMGAUJVBRKTKNQVQ
+  secret_access_key:
+    secure: GTCKj+4UDsJkbCWWxESoYu9TLDM7LjuTi2lCzp0h3vNDpZ0vn8B9Rcli7NDHnc2v8Bx8VvxpOfjImyDvsAZljEOdshAkd6xSr9eUv9rJCl/QovJ/9FJ6tNMg87hVCnL7QNV1vyj2vIsOSpC36hsAOj4izGCdFjwCjzKx+q+xjpV21eFTI7zJE3sdq5et4kNRS+JCzAftVWZsuU/ItA8G2ItbFEF9Q6U4UqQoDOKlhtL+UTU3zxnxHiUVQ8M26A9m5tVVEggeLNNyYQLaFuNE68MuZexlLfDj04tjoeroMWgjrWp4z+z7Z53kpW1GET7RX2ET+sVz8iGv1sBbUHO7AjAPcNUvZvj40U82dNFzzrUMKd4Cv9YLPLI793/jBq1zGNM3js7CuvTy8pNYdOAgRnugHiV07e0TH2He8yKoBwnMk1CKSB+Q3tY8P+iuZtuTlBV0FYjFV3l2/5sNQAlD89N9+WoE89Rh/FjmvHlzbBRQuew9lKird6QO7AMoPnBjkq/yN1vT276fcrXQxb/XCrPC6BUzoUwhHxK7O58HT6V4FlvoKuUcIY8UXBdnJoP/J5Y3iKc+nPqhIKLS37a8tH7vgHkqTNYeG34eoQ7SjtgwnjstGl6f+P7xTJwBZRzv5TYQm/Gtv3NxMvrdLH507GE3AUR9XycLwbHQVcGIooY=
+  bucket: learn.visualregressiontesting.com
+  local-dir: build
+  acl: public_read
+  on:
+    repo: visualregressiontesting/learn.visualregressiontesting.com

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    {{ contents | safe }}
+
+
+    {% if serve == 1%}
+      <script src="http://localhost:35729/livereload.js"></script>
+    {% endif %}
+  </body>
+</html>
