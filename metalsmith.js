@@ -29,6 +29,7 @@ if (process.env.SERVE) {
 
 metalsmith
   .metadata(metadata)
+  .clean(false)
   .use(layouts({
     engine: 'nunjucks',
     directory: 'templates'
