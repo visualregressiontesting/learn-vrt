@@ -30,6 +30,10 @@ if (process.env.SERVE) {
 metalsmith
   .metadata(metadata)
   .clean(false)
+  .use(assets({
+    source: './assets', // relative to the working directory
+    destination: './' // relative to the build directory
+  }))
   .use(layouts({
     engine: 'nunjucks',
     directory: 'templates'
