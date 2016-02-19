@@ -16,6 +16,7 @@ body,html {
   padding: 0;
   margin: 0;
   color: $black;
+
 }
 
 .icon {
@@ -42,7 +43,7 @@ body,html {
     margin: 0;
     font-weight: bold;
     text-shadow: -1px -1px 1px rgba(0,0,0,.2);
-    @media (min-width: $medium) {
+    @media (min-width: $large) {
         font-size: 4em;
     }
   }
@@ -71,9 +72,10 @@ body,html {
   flex-direction: column;
   max-width: $max-width;
   padding: 0 $gutter;
-  margin: 3em auto 2em;
+  margin: 1em auto 0;
   @media (min-width: $medium) {
     flex-direction: row;
+    margin: 3em auto 2em;
   }
 }
 
@@ -86,6 +88,8 @@ body,html {
   margin-right: 2%;
   margin-bottom: 0;
   padding: 1em 0 1em $icon-space;
+
+
   @media (min-width: $medium) and (max-width: $large) {
     padding: 0;
   }
@@ -107,7 +111,14 @@ body,html {
   }
 
   .benefit-title {
-    margin-top: 0;
+    margin: 0;
+  }
+
+  @media (max-width: $medium) {
+    .benefit-tagline {
+      font-size: 1.4em;
+      margin-top: .2em;
+    }
   }
 }
 
@@ -122,8 +133,14 @@ body,html {
     flex-direction: column;
   }
 
-
   &-section {
+
+    @media (max-width: $medium) {
+      font-size: 1.3em;
+      h2 {
+        font-size: 1.2em;
+      }
+    }
 
     strong {
       margin-bottom: .3em;
@@ -157,8 +174,13 @@ body,html {
         justify-content: center;
       }
       li {
-        flex-basis: 33.3%;
-        padding-right: 1em;
+        flex-basis: 45%;
+        padding-right: .5em;
+        font-size: 1.3em;
+        &:nth-child(2n) {
+          padding-left: .5em;
+          padding-right: 0;
+        }
       }
     }
 
@@ -181,10 +203,8 @@ body,html {
   border: 1px solid rgba($orange,.08);
   padding: 1em;
   margin: 2em 0 4em;
-  @media (min-width: $extralarge) {
-    width: 62%;
-    max-width: 600px;
-  }
+  max-width: $large;
+
   &-form-header {
     margin: 0 0 1em;
   }
