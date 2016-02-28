@@ -3,7 +3,10 @@ var layouts = require('metalsmith-layouts');
 var serve = require('metalsmith-serve');
 var watch = require('metalsmith-watch');
 var assets = require('metalsmith-assets');
+var sass = require('metalsmith-sass');
 var nunjucks = require('nunjucks');
+var autoprefixer = require('metalsmith-autoprefixer');
+
 var metalsmith = Metalsmith(__dirname);
 
 nunjucks
@@ -34,6 +37,10 @@ metalsmith
     source: './assets', // relative to the working directory
     destination: './' // relative to the build directory
   }))
+  .use(sass({
+    outputDir: 'css/'   // This changes the output dir to "build/css/" instead of "build/scss/"
+  }))
+  .use(autoprefixer())
   .use(layouts({
     engine: 'nunjucks',
     directory: 'templates'
