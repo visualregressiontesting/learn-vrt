@@ -4,10 +4,10 @@ layout: base.html
 ---
 <header class="header">
   <div class="header-container">
-    <h1 class="header-title">Stop playing "spot the difference"</h1>
-    <p class="header-tagline">Get going on Visual Regression Testing with 6 days of free training e-mails
-    <br><a href="#mce-EMAIL">Register Now</a></p>
-    <img src="images/webdriverio-white-half.png" alt="" class="robot">
+    <h1 class="header-title">Stop playing "spot the difference" every time you update your website.</h1>
+    <p class="header-tagline">See how Visual Regression Testing catches changes automatically through this free, 6-day email course.</p>
+    <p class="cta"><a href="#mce-EMAIL" class="scrollto">Subscribe Now &mdash; It's Free!</a></p>
+    <!-- <img src="images/webdriverio-white-half.png" alt="" class="robot"> -->
   </div>
 </header>
 
@@ -16,22 +16,22 @@ layout: base.html
     <svg class="icon">
       <use xlink:href="#icon-paperplane" />
     </svg>
-    <h2 class="benefit-title">6 easy to follow lessons</h2>
-    <p class="benefit-tagline">Delivered to your email every day</p>
+    <h2 class="benefit-title">Less than 5 minutes a day</h2>
+    <p class="benefit-tagline">Bite-sized emails help you learn a little bit each day, fitting in to your busy schedule</p>
   </li>
   <li class="benefit">
     <svg class="icon">
       <use xlink:href="#icon-book" />
     </svg>
     <h2 class="benefit-title">Free e-book companion</h2>
-    <p class="benefit-tagline">Complimentary <a href="https://leanpub.com/visual-regression-testing-and-webdriverio-guide">e-book version</a> at the end of the course.</p>
+    <p class="benefit-tagline">After completion, you'll recieve an equivalent e-book version of the course.</p>
   </li>
   <li class="benefit">
     <svg class="icon">
       <use xlink:href="#icon-folder-open" />
     </svg>
     <h2 class="benefit-title">Code Samples</h2>
-    <p class="benefit-tagline">Ready-to-go tests included</p>
+    <p class="benefit-tagline">Ready-to-go tests included so you can easily get started with your own testing.</p>
   </li>
   <!-- Since we don't have this yet
   <li class="benefit">
@@ -43,40 +43,45 @@ layout: base.html
   </li> -->
 </ul>
 <main class="main">
-  <section class="main-section">
-    <h2>Learn Visual Regression Testing with WebdriverIO.</h2>
-    <p>
-      Tired of small style changes causing big havoc because CSS is crazy like that? Catch problems proactively with Visual Regression Testing! No more being surprised that your shopping cart has been broken on mobile devices for the past 4 builds. You can easily write a suite of tests to run after every update and ensure your site is looking exactly like it should.
-    </p>
+  <h2>Why should I learn Visual Regression Testing?</h2>
+  <p>Because this is what happens when you change the CSS:</p>
+  <p class="change-css"><img src="images/css.gif" alt=""></p>
+  <h2>How can Visual Regression Testing help?</h2>
 
-    <p>In this course, you will learn how to:</p>
+  <p>Computers are actually pretty good at spotting differences between images. Because they compare data (instead of the visual representation of that data) they can easily compare the values of two images to spot differences between them. Here's an example:</p>
 
-    <ul>
-      <li>Automate testing of HTML and JavaScript changes.</li>
-      <li>Keep on top of breaks in your design as they happen during development.</li>
-      <li>Add this visual regression technique to speed up old project workflows.</li>
-    </ul>
+  <p class="change-css"><img src="images/example.png" alt=""></p>
+  <!-- <p>
+    Tired of small style changes causing big havoc because CSS is crazy like that? Catch problems proactively with Visual Regression Testing! No more being surprised that your shopping cart has been broken on mobile devices for the past 4 builds. You can easily write a suite of tests to run after every update and ensure your site is looking exactly like it should.
+  </p> -->
 <!--
-    <p>Pre-requisites are simply a basic understanding of:</p>
-    <ul>
-      <li>Command line usage (<a href="https://www.youtube.com/watch?v=bE9DyH43C2I">YouTube Refresher</a>)</li>
-      <li><a href="https://www.codecademy.com/learn/javascript">JavaScript fundamentals</a> such as variables, functions, etc.</li>
-      <li>Node fundamentals such as <a href="https://egghead.io/lessons/node-js-finding-and-installing-packages-in-your-node-application-using-npm?series=introduction-to-node-the-fundamentals">installing and requiring modules</a>.</li>
-    </ul>
+  <h2>Do I need to know anything before starting?</h2>
+  <p>Understanding the following tech is helpful, but not required:</p>
+  <ul>
+    <li>Command line usage (<a href="https://www.youtube.com/watch?v=bE9DyH43C2I">YouTube Refresher</a>)</li>
+    <li><a href="https://www.codecademy.com/learn/javascript">JavaScript fundamentals</a> such as variables, functions, etc.</li>
+    <li>Node fundamentals such as <a href="https://egghead.io/lessons/node-js-finding-and-installing-packages-in-your-node-application-using-npm?series=introduction-to-node-the-fundamentals">installing and requiring modules</a>.</li>
+  </ul>
  -->
+  <h2>What does this course cover?</h2>
 
-  </section>
-  <aside class="main-aside">
-      <ul>
-        <li>Lesson 1 <span>What you Need to Know about Visual Regression Testing</span></li>
-        <li>Lesson 2 <span>Write Your First Regression Test</span></li>
-        <li>Lesson 3 <span>Real Visual Regression Testing with WebdriverCSS</span></li>
-        <li>Lesson 4 <span>Take Action with WebdriverIO Commands</span></li>
-        <li>Lesson 5 <span>Catch Failures the Lazy Way</span></li>
-        <li>Lesson 6 <span>What's next for you?</span></li>
+  <p>Everything you need to know to get started with Visual Regression Testing, including:</p>
+  <ul>
+    <li>How to use test automation to validate all types of front-end updates</li>
+    <li>How to catch drift in your design that occurs through regular site updates</li>
+    <li>How to use assertions so you can integrate your tests into your CICD process.</li>
+  </ul>
 
-      </ul>
-  </aside>
+  <h3>How is it split up?</h3>
+  <p>The course is consists of 6 short lessons:</p>
+  <ul class="lessons">
+    <li>Lesson 1 <span>What you Need to Know about Visual Regression Testing</span></li>
+    <li>Lesson 2 <span>Write Your First UI Regression Test</span></li>
+    <li>Lesson 3 <span>Real Visual Regression Testing with WebdriverCSS</span></li>
+    <li>Lesson 4 <span>Take Action with WebdriverIO Commands</span></li>
+    <li>Lesson 5 <span>Catch Failures the Lazy Way</span></li>
+    <li>Lesson 6 <span>What's next for you?</span></li>
+  </ul>
 </main>
 
 
@@ -112,7 +117,8 @@ layout: base.html
     <form action="//kevinlamping.us10.list-manage.com/subscribe/post?u=17d67d558ef439917f81518bc&amp;id=05bfddd377" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
       <div id="mc_embed_signup_scroll">
 
-        <h3 class="email-signup-form-header">Learn from two industry professionals who have spent the past several years implementing visual regression testing on large scale applications.</h3>
+        <h3 class="email-signup-form-header">So, are you tired of small style changes causing big havoc because CSS is crazy like that?</h3>
+        <p>Sign up today to learn Visual Regression Testing from two industry professionals who have spent the past several years implementing it on large scale applications.</p>
 
         <div class="mc-field-group">
           <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter your Email Address">
@@ -122,7 +128,7 @@ layout: base.html
           <div class="response" id="mce-success-response" style="display:none"></div>
         </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_17d67d558ef439917f81518bc_05bfddd377" tabindex="-1" value=""></div>
-        <div class="clear"><button type="submit" name="subscribe" id="mc-embedded-subscribe">Send me my first lesson today</button></div>
+        <div class="clear"><button type="submit" name="subscribe" id="mc-embedded-subscribe">Send me my first lesson!</button></div>
       </div>
     </form>
   </div>
@@ -131,6 +137,28 @@ layout: base.html
 
 <footer>
 
-&copy; 2016 <a href="https://twitter.com/klamping">Kevin Lamping</a> &amp; <a href="https://twitter.com/micahgodbolt">Micah Godbolt</a> | Check out our other course: <a href="http://learnwebdriverio.com">Learn WebdriverIO</a>
+&copy; 2016 <a href="https://twitter.com/klamping">Kevin Lamping</a> &amp; <a href="https://twitter.com/micahgodbolt">Micah Godbolt</a> | Check out our other course: <a href="http://learnwebdriverio.com">Learn UI Test Automation with WebdriverIO</a>
 
 </footer>
+
+<script src="js/jquery.js"></script>
+
+<script>
+  $(function() {
+
+      // Scroll to Explore
+
+      $('.scrollto').bind('click', function(event) {
+          event.preventDefault();
+          var $anchor = $(this);
+          var $target = $($anchor.attr('href'));
+          $('html, body').stop().animate({
+              scrollTop: $target.offset().top
+          }, 1000, function() {
+            // Animation complete.
+            $target.focus();
+          });
+
+      });
+  });
+</script>
