@@ -2,3 +2,6 @@ node_modules
 build
 .sass-cache
 .DS_store
+
+src/code-samples/node_modules
+src/code-samples/webdrivercss

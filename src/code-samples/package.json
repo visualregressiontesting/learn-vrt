@@ -1,0 +1,11 @@
+{
+  "name": "@visualregressiontesting/code-samples",
+  "version": "1.0.0",
+  "license": "ISC",
+  "main": "day-2.js",
+  "dependencies": {
+    "chromedriver": "^2.27.2",
+    "webdrivercss": "github:visualregressiontesting/webdrivercss",
+    "webdriverio": "^4.6.1"
+  }
+}
